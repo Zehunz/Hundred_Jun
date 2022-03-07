@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int x,xin;
+    int cnt=0;
+    scanf("%d",&x);
+    xin=x;
+    while(1){
+        x=(((x/10)+(x%10))%10+(x%10)*10);
+        cnt++;
+        
+        if(x==xin){
+            printf("%d",cnt);
+            break;
+        }
+    }
+    return 0;
+}
